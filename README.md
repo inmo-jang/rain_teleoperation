@@ -91,7 +91,7 @@ strictness: 2"
 
 ### jog_arm
 
-- Set "ur_config.yaml", and run below 
+- Set 'ur_config.yaml', and run below 
 
 ```
 rosparam set joy_node/dev "/dev/input/jsX"
