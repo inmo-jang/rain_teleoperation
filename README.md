@@ -15,7 +15,7 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 
 - NOTE: please prefer using the binary release (see previous section) over building from source where possible. Source installs will not be automatically updated by new package releases and require more work to setup.
 
-### ur_modern_driver
+### ur_modern_driver (https://github.com/inmo-jang/ur_modern_driver)
 
 - Install ur_modern_driver (kinetic-devel), 
 
@@ -36,6 +36,18 @@ sudo apt-get install ros-kinetic-moveit
 ```
 sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control
 ```
+
+### jog_arm (https://github.com/inmo-jang/moveit_jog_arm)
+```
+git clone https://github.com/inmo-jang/moveit_jog_arm.git
+```
+
+
+### rain_ros (https://github.com/inmo-jang/rain_ros)
+```
+git clone https://github.com/inmo-jang/rain_ros.git
+```
+
 
 
 ## Run
