@@ -5,7 +5,8 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 ## Installation
 
 ### univesral_robot
-- Install universal_robot using apt, as recommended in https://github.com/ros-industrial/universal_robot. 
+- Install universal_robot using apt, as recommended in https://github.com/ros-industrial/universal_robot: 
+       "NOTE: please prefer using the binary release (see previous section) over building from source where possible. Source installs will not be automatically updated by new package releases and require more work to setup."
 
 ```
     sudo apt-get install ros-$ROS_DISTRO-universal-robot
@@ -13,7 +14,7 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 
 - replace `$ROS_DISTRO` with `hydro`, `indigo` or `kinetic`, depending on which ROS version you have installed.
 
-- NOTE: please prefer using the binary release (see previous section) over building from source where possible. Source installs will not be automatically updated by new package releases and require more work to setup.
+
 
 ### ur_modern_driver (https://github.com/inmo-jang/ur_modern_driver)
 
