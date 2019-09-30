@@ -38,6 +38,10 @@ sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control
 ```
 
 ### jog_arm (https://github.com/inmo-jang/moveit_jog_arm)
+
+- Tutorial: https://ros-planning.github.io/moveit_tutorials/doc/arm_jogging/arm_jogging_tutorial.html
+- Repo: https://github.com/ros-planning/moveit/tree/master/moveit_experimental/moveit_jog_arm
+
 ```
 git clone https://github.com/inmo-jang/moveit_jog_arm.git
 ```
