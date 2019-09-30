@@ -92,10 +92,11 @@ strictness: 2"
 
 ### jog_arm
 
+- This is a launch file to use a xbox joystick for controlling the robot. 
 - Set 'ur_config.yaml', and run below 
 
 ```
-rosparam set joy_node/dev "/dev/input/jsX"
+rosparam set joy_node/dev "/dev/input/jsX" (if necessary)
 roslaunch moveit_jog_arm jog_with_xbox.launch
 ```
 
