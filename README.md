@@ -99,6 +99,7 @@ rosparam set joy_node/dev "/dev/input/jsX"
 roslaunch moveit_jog_arm jog_with_xbox.launch
 ```
 
+- Note: You need to install `joy` package: http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick. 
 
 
 
