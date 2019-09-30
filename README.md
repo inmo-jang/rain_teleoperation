@@ -55,9 +55,9 @@ git clone https://github.com/inmo-jang/rain_ros.git
 
 
 
-## Run
+## Execution
 
-### Run UR5 
+### UR5 
 
 * Real
 ```
