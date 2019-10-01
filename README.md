@@ -87,7 +87,7 @@ roslaunch rain_moveit_config moveit_rviz.launch config:=true
 * (Option 1) position-based controller : You will send Cartesian delta information as a input
 ```
 rosservice call /controller_manager/switch_controller "start_controllers:
-- 'joint_group_vel_controller'
+- 'joint_group_position_controller'
 stop_controllers:
 - 'pos_based_pos_traj_controller'
 strictness: 2"
@@ -97,7 +97,7 @@ strictness: 2"
 
 ```
 rosservice call /controller_manager/switch_controller "start_controllers:
-- 'joint_vel_position_controller'
+- 'joint_group_vel_controller'
 stop_controllers:
 - 'pos_based_pos_traj_controller'
 strictness: 2"
