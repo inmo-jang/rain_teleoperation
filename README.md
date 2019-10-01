@@ -73,8 +73,10 @@ roslaunch ur_modern_driver ur5_ros_control.launch robot_ip:=172.22.22.2
 * Gazebo
 
 ```
-roslaunch rain_gazebo ur5_robotiq.launch
+roslaunch rain_gazebo ur5_robotiq.launch (option)
 ```
+
+        - Available options: "camera := true" - Provides 3 virtual cameras. 
 
 ### Moveit
 
