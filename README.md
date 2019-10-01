@@ -53,6 +53,8 @@ git clone https://github.com/inmo-jang/moveit_jog_arm.git
 git clone https://github.com/inmo-jang/rain_ros.git
 ```
 
+### ros_control (http://gazebosim.org/tutorials/?tut=ros_control)
+
 
 
 ## Execution
@@ -91,7 +93,8 @@ stop_controllers:
 strictness: 2"
 ```
 
-* (Option 2) velocity-based controller : You will send Cartesian derivative information as a input
+* (Option 2 - Only available for real robot) velocity-based controller : You will send Cartesian derivative information as a input (As of 1 Oct 2019, "gazebo_ros_control" is not fully support "VelocityJointInterface" - http://gazebosim.org/tutorials/?tut=ros_control)
+
 ```
 rosservice call /controller_manager/switch_controller "start_controllers:
 - 'joint_vel_position_controller'
@@ -103,7 +106,7 @@ strictness: 2"
 ### jog_arm
 
 - This is a launch file to use a xbox joystick for controlling the robot. 
-- Set 'ur_config.yaml', and run below 
+- Set 'ur_config.yaml' depending on the controller you use, and run below 
 
 ```
 rosparam set joy_node/dev "/dev/input/jsX" (if necessary)
