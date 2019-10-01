@@ -4,7 +4,12 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 
 ## Installation
 
-### univesral_robot
+### (1) rain_ros (https://github.com/inmo-jang/rain_ros)
+```
+git clone https://github.com/inmo-jang/rain_ros.git
+```
+
+### (2) univesral_robot
 - Install universal_robot using apt, as recommended in https://github.com/ros-industrial/universal_robot: 
        "NOTE: please prefer using the binary release (see previous section) over building from source where possible. Source installs will not be automatically updated by new package releases and require more work to setup."
 
@@ -16,7 +21,7 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 
 
 
-### ur_modern_driver (https://github.com/inmo-jang/ur_modern_driver)
+### (3) ur_modern_driver (https://github.com/inmo-jang/ur_modern_driver)
 
 - Install ur_modern_driver (kinetic-devel), 
 
@@ -24,13 +29,16 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
     git clone https://github.com/inmo-jang/ur_modern_driver.git -b kinetic-devel
 ```   
 
-### Moveit (Kinetic)
+### (4) Moveit (Kinetic)
 
 ```
 sudo apt-get install ros-kinetic-moveit
 ```
 
-### Gazebo_ros_plug_ing (for gazebo operatoin) 
+### (5-1) ros_control (http://gazebosim.org/tutorials/?tut=ros_control)
+
+
+### (5-2) gazebo_ros_control (for gazebo operatoin) 
 
 - http://gazebosim.org/tutorials?tut=ros_installing&cat=connect_ros
 
@@ -38,7 +46,7 @@ sudo apt-get install ros-kinetic-moveit
 sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control
 ```
 
-### jog_arm (https://github.com/inmo-jang/moveit_jog_arm)
+### (6) jog_arm (https://github.com/inmo-jang/moveit_jog_arm)
 
 - Tutorial: https://ros-planning.github.io/moveit_tutorials/doc/arm_jogging/arm_jogging_tutorial.html
 - Repo: https://github.com/ros-planning/moveit/tree/master/moveit_experimental/moveit_jog_arm
@@ -48,12 +56,8 @@ git clone https://github.com/inmo-jang/moveit_jog_arm.git
 ```
 
 
-### rain_ros (https://github.com/inmo-jang/rain_ros)
-```
-git clone https://github.com/inmo-jang/rain_ros.git
-```
 
-### ros_control (http://gazebosim.org/tutorials/?tut=ros_control)
+
 
 
 
