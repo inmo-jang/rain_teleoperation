@@ -55,9 +55,12 @@ strictness: 2"
 
 ### jog_arm
 
+* You should set some parameters in "leapmotion_to_twist.py". 
 ```
 roslaunch moveit_jog_arm jog_with_leapmotion.launch
+rosrun moveit_jog_arm leapmotion_to_twist.py (Wiill be included in jog_with_leapmotion.launch)
 ```
+
 
 ### Leap Motion
 
