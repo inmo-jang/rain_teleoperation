@@ -1,6 +1,6 @@
 # rain_teleoperation
 
-This repo describes how to setup a Universal Robot for teleoperatoin. The environment I am using is Ubuntu 16.04 and ROS Kinetic version. 
+This repo describes how to setup a Universal Robot for teleoperatoin. The environment I am using is Ubuntu 16.04 and ROS Kinetic version.  d
 
 ## Installation
 
