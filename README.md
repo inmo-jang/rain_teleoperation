@@ -6,4 +6,4 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 
 ## (1) Xbox Teleoperation [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/xbox_teleop.md)
 
-## (2) Leap motion Teleoperation [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/leapmotion_teleop.md)
+## (2) TODO: Leap motion Teleoperation [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/leapmotion_teleop.md)
