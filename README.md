@@ -80,7 +80,7 @@ roslaunch rain_gazebo ur5_robotiq.launch $(option)$
    
      - "camera:=true" - Provides 3 virtual cameras. (Default: false) 
      
-     - TODO: "gripper:=robotiq_3f" - Use a 3-finger RobotiQ gripper. (Default: none)
+     - "gripper:=robotiq_3f" - Use a 3-finger RobotiQ gripper. (Default: none)
 
 ### Moveit
 
