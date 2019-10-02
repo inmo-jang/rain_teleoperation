@@ -53,6 +53,8 @@ stop_controllers:
 strictness: 2"
 ```
 
+* Note: Due to instability of rospy in terms of time, it was not easy to get the angular velocity of a human operator (e.g. it often happens that del_time = 0. I don't know why -_-;). So I decided to use "joint_group_position_controller" at the moment. 
+
 ### jog_arm
 
 * You should set some parameters in "leapmotion_to_twist.py". 
