@@ -1,63 +1,5 @@
 # How to Control the Robot by Leap Motion
 
-## Installation
-
-### (1) rain_ros (https://github.com/inmo-jang/rain_ros)
-```
-git clone https://github.com/inmo-jang/rain_ros.git
-```
-
-### (2) univesral_robot
-- Install universal_robot using apt, as recommended in https://github.com/ros-industrial/universal_robot: 
-       "NOTE: please prefer using the binary release (see previous section) over building from source where possible. Source installs will not be automatically updated by new package releases and require more work to setup."
-
-```
-    sudo apt-get install ros-$ROS_DISTRO-universal-robot
-```
-
-- replace `$ROS_DISTRO` with `hydro`, `indigo` or `kinetic`, depending on which ROS version you have installed.
-
-
-
-### (3) ur_modern_driver (https://github.com/inmo-jang/ur_modern_driver)
-
-- Install ur_modern_driver (kinetic-devel), 
-
-```
-    git clone https://github.com/inmo-jang/ur_modern_driver.git -b kinetic-devel
-```   
-
-### (4) Moveit (Kinetic)
-
-```
-sudo apt-get install ros-kinetic-moveit
-```
-
-### (5-1) ros_control (http://gazebosim.org/tutorials/?tut=ros_control)
-
-
-### (5-2) gazebo_ros_control (for gazebo operatoin) 
-
-- http://gazebosim.org/tutorials?tut=ros_installing&cat=connect_ros
-
-```
-sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control
-```
-
-### (6) jog_arm (https://github.com/inmo-jang/moveit_jog_arm)
-
-- Tutorial: https://ros-planning.github.io/moveit_tutorials/doc/arm_jogging/arm_jogging_tutorial.html
-- Repo: https://github.com/ros-planning/moveit/tree/master/moveit_experimental/moveit_jog_arm
-
-```
-git clone https://github.com/inmo-jang/moveit_jog_arm.git
-```
-
-
-
-
-
-
 
 ## Execution
 
@@ -113,15 +55,16 @@ strictness: 2"
 
 ### jog_arm
 
-- This is a launch file to use a xbox joystick for controlling the robot. 
-- Set 'ur_config.yaml' depending on the controller you use, and run below 
-
 ```
-rosparam set joy_node/dev "/dev/input/jsX" (if necessary)
-roslaunch moveit_jog_arm jog_with_xbox.launch
+roslaunch moveit_jog_arm jog_with_leapmotion.launch
 ```
 
-- Note: You need to install `joy` package: http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick. 
+### Leap Motion
 
+* Genenate a fake leapmotion input for test purpuse
+
+```
+rosrun rain_test gen_fake_leap.py
+```
 
 
