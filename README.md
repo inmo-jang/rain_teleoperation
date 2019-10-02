@@ -73,14 +73,14 @@ roslaunch ur_modern_driver ur5_ros_control.launch robot_ip:=172.22.22.2
 * Gazebo
 
 ```
-roslaunch rain_gazebo ur5_robotiq.launch (option)
+roslaunch rain_gazebo ur5_robotiq.launch $(option)$
 ```
 
    Available options: 
    
      - "camera:=true" - Provides 3 virtual cameras. (Default: false) 
      
-     - TODO: "gripper:=3finger" - Use a 3-finger RobotiQ gripper. (Default: none)
+     - TODO: "gripper:=robotiq_3f" - Use a 3-finger RobotiQ gripper. (Default: none)
 
 ### Moveit
 
