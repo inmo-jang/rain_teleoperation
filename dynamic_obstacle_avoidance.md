@@ -2,6 +2,12 @@
 
 ## Preparation
 
+- Install: On top of the packages for [Leap Motion Teleoperation](https://github.com/inmo-jang/rain_teleoperation/blob/master/leapmotion_teleop.md), you need to install the following packages:
+
+   - [dope](https://github.com/inmo-jang/Deep_Object_Pose): object detection algorithm
+   - [ros_astra_camera_OLD](https://github.com/inmo-jang/ros_astra_camera_OLD): ROS package for Astra Orbbec
+   - [rain_ai_assist](https://github.com/inmo-jang/rain_ai_assist): generates obstacle avoidance modulation 
+   
 * Copy `demo_dyanmic_obstacle_avoidance.rviz` to `/.rviz`. 
 
 
