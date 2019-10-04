@@ -8,4 +8,4 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 
 ## (2) TODO: Leap motion Teleoperation [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/leapmotion_teleop.md)
 
-## (3) Demo: Dynamic Obstacle Avoidance [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/dynamic_obstacle_avoidance.md)
+## (3) TODO: Demo - Dynamic Obstacle Avoidance [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/dynamic_obstacle_avoidance.md)
