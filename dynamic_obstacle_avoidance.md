@@ -78,9 +78,10 @@ rosrun moveit_jog_arm leapmotion_to_twist.py $(option = ROS)$ (Wiill be included
 
 ### Pose Estimation by DOPE
 
-* Launch a Astra Camera
+* Launch a Astra Camera and match its coordinate with the UR's coordinate (hacky)
 ```
 roslaunch astra_camera astra.launch
+rosrun tf2_ros static_transform_publisher 1.45 -0.05 0.135 3.141592 0 0 world camera_astra_link 
 ```
 
 * Run DOPE and match the coordination of pose estimation result with the UR5's coordinate (TODO: I have done it in a hacky way)
