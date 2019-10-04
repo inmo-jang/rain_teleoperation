@@ -1,5 +1,9 @@
 # Demo: Dynamic Obstacle Avoidance
 
+## Preparation
+
+* Copy `demo_dyanmic_obstacle_avoidance.rviz` to `/.rviz`. 
+
 
 ## Execution
 
@@ -60,16 +64,37 @@ strictness: 2"
 * You should set some parameters in "leapmotion_to_twist.py", for example, scaling factors.  
 ```
 roslaunch moveit_jog_arm jog_with_leapmotion.launch
-rosrun moveit_jog_arm leapmotion_to_twist.py (Wiill be included in jog_with_leapmotion.launch)
+rosrun moveit_jog_arm leapmotion_to_twist.py $(option = ROS)$ (Wiill be included in jog_with_leapmotion.launch)
+```
+* In ROS option, the node will take a leap motion input in ROS coordinate. Otherwise, it assume that an input in Unity coordinate will be used. 
+
+* For this demo, just use `rosrun moveit_jog_arm leapmotion_to_twist.py ROS`
+
+### Pose Estimation by DOPE
+
+* Launch a Astra Camera
+```
+roslaunch astra_camera astra.launch
 ```
 
+* Run DOPE and match the coordination of pose estimation result with the UR5's coordinate (TODO: I have done it in a hacky way)
+```
+roslaunch dope dope.launch
+rosrun rain_ai_assist dope_to_obstacle.py
+```
 
-### Leap Motion
+* Run Rviz
+```
+rosrun rain_ai_assist rviz_modulation.py
+rosrun rviz rviz -d ~/.rviz/demo_dyanmic_obstacle_avoidance.rviz
+```
 
-* Genenate a fake leapmotion input for test purpuse
+### Leap Motion with Dynamic Obstacle Avoidance
+
+* Genenate a fake leapmotion input, which will then be modulated by the dynamic obstacle avoidancce algorithm. 
 
 ```
-rosrun rain_test gen_fake_leap.py
+rosrun rain_ai_assist demo_dynamic_obstacle.py
 ```
 
 
