@@ -59,7 +59,7 @@ git clone https://github.com/inmo-jang/moveit_jog_arm.git
 
 - See: https://wiki.ros.org/robotiq
 ``` 
-git clone https://github.com/inmo-jang/robotiq -b kinetic-devel
+git clone https://github.com/inmo-jang/robotiq.git
 ```
 
 
