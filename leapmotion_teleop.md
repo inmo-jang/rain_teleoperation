@@ -2,7 +2,7 @@
 
 ------------------------
 
-## Installation
+## Preparation
 
 - Install the packages for ["How to control the robot by a Xbox Joystick"](https://github.com/inmo-jang/rain_teleoperation/edit/master/xbox_teleop.md). 
 
@@ -39,7 +39,7 @@ strictness: 2"
 * You should set some parameters in "leapmotion_to_twist.py", for example, scaling factors.  
 ```
 roslaunch moveit_jog_arm jog_with_leapmotion.launch
-rosrun moveit_jog_arm leapmotion_to_twist.py (Wiill be included in jog_with_leapmotion.launch)
+rosrun moveit_jog_arm leapmotion_to_twist.py (TODO: Will be included in jog_with_leapmotion.launch)
 ```
 
 
