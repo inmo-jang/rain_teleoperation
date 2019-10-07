@@ -69,7 +69,7 @@ git clone https://github.com/inmo-jang/robotiq.git
 
 ## Execution
 
-### UR5 
+### (1) UR5 
 
 - Real
 ```
@@ -86,7 +86,7 @@ roslaunch rain_gazebo ur5_robotiq.launch $(option)$
       - `camera:=true` -- Provides 3 virtual cameras. (Default: false) 
       - `gripper:=robotiq_3f` -- Use a 3-finger RobotiQ gripper. (Default: none)
 
-### Moveit
+### (2) Moveit
 
 ```
 roslaunch rain_moveit_config moveit_planning_execution.launch
@@ -96,7 +96,7 @@ roslaunch rain_moveit_config moveit_rviz.launch config:=true
 - Move the robot to a normal position using Moveit (Otherwise, due to singularity, jog_arm does not work)
 
 
-### Change ros_controller
+### (3) Change ros_controller
 
 * (Option 1) position-based controller : You will send Cartesian delta information as a input
 ```
@@ -117,7 +117,7 @@ stop_controllers:
 strictness: 2"
 ```
 
-### jog_arm
+### (4) jog_arm
 
 - This is a launch file to use a xbox joystick for controlling the robot. 
 - Set 'ur_config.yaml' depending on the controller you use, and run below 
