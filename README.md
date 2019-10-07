@@ -11,3 +11,5 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 ## (3) Demo - Dynamic Obstacle Avoidance [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/dynamic_obstacle_avoidance.md)
 
 - Video: https://www.youtube.com/watch?v=PLkSEBvFeTs&t=1s
+
+## (4) Demo - Dynamic Orientation Adjustment [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/orientation_adjustment.md)
