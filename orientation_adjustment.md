@@ -1,5 +1,7 @@
 # Demo: Dynamic Orientation Adjustment
 
+- This demo is not good enough. I think I need to do literature survey about motion planning based on a given grasping orientation. 
+
 -------------------------
 ## Preparation
 
