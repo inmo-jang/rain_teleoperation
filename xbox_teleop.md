@@ -1,5 +1,6 @@
 # How to Control the robot by a Xbox/Playstation Joystick. 
 
+------------------------
 
 ## Installation
 
@@ -55,15 +56,16 @@ git clone https://github.com/inmo-jang/moveit_jog_arm.git
 ```
 
 
-### (7) robotiq (https://github.com/inmo-jang/robotiq)
+### (7) (Optional) robotiq (https://github.com/inmo-jang/robotiq)
 
 - See: https://wiki.ros.org/robotiq
 ``` 
 git clone https://github.com/inmo-jang/robotiq.git
 ```
 
+- This package is needed to interface with a RobotiQ gripper. 
 
-
+------------------------
 
 ## Execution
 
