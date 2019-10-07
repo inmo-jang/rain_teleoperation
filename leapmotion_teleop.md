@@ -4,7 +4,9 @@
 
 ## Installation
 
-- Follow the instruction in ["How to control the robot by a Xbox Joystick"](https://github.com/inmo-jang/rain_teleoperation/edit/master/xbox_teleop.md). 
+- Install the packages for ["How to control the robot by a Xbox Joystick"](https://github.com/inmo-jang/rain_teleoperation/edit/master/xbox_teleop.md). 
+
+- One top of that, you also need to install [rain_test](https://github.com/inmo-jang/rain_test), which contains a node providing a fake leap motion input. 
 
 -------------------------
 ## Execution
