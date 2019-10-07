@@ -12,4 +12,4 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 
 - Video: https://www.youtube.com/watch?v=PLkSEBvFeTs&t=1s
 
-## (4) Demo - Dynamic Orientation Adjustment [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/orientation_adjustment.md)
+## (4) TODO: Demo - Dynamic Orientation Adjustment [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/orientation_adjustment.md)
