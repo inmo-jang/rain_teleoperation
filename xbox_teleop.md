@@ -71,22 +71,20 @@ git clone https://github.com/inmo-jang/robotiq.git
 
 ### UR5 
 
-* Real
+- Real
 ```
 roslaunch ur_modern_driver ur5_ros_control.launch robot_ip:=172.22.22.2
 ```
 
-* Gazebo
+- Gazebo
 
 ```
 roslaunch rain_gazebo ur5_robotiq.launch $(option)$
 ```
-
-   Available options: 
    
-     - "camera:=true" - Provides 3 virtual cameras. (Default: false) 
-     
-     - "gripper:=robotiq_3f" - Use a 3-finger RobotiQ gripper. (Default: none)
+   - Available options: 
+      - `camera:=true` -- Provides 3 virtual cameras. (Default: false) 
+      - `gripper:=robotiq_3f` -- Use a 3-finger RobotiQ gripper. (Default: none)
 
 ### Moveit
 
