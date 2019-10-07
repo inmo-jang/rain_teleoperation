@@ -2,6 +2,8 @@
 
 - This demo is not good enough. I think I need to do literature survey about motion planning based on a given grasping orientation. 
 
+- `leap_to_twist.py` should be modified in a way that it includes a PID controller for orientation control to acheive a desired orientation. At the moment, due to the joint limit by `jog_arm`, a time-trajectory of the right palm's orientation is not suitable to use. 
+
 -------------------------
 ## Preparation
 
