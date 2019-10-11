@@ -86,7 +86,7 @@ roslaunch rain_gazebo ur5_robotiq.launch $(option)$
       - `camera:=true` -- Provides 3 virtual cameras. (Default: false) 
       - `gripper:=robotiq_3f` -- Use a 3-finger RobotiQ gripper. (Default: none) 
          - You can interface with the gripper by topics `right_hand/command` and `right_hand/state`. The detail can be found in [here](https://assets.robotiq.com/website-assets/support_documents/document/3-Finger_PDF_20190221.pdf) -- Look Sec 4.4 and 4.5. 
-         
+         - **TODO** : When you use this option, Moveit might not work well. 
       
 
 ### (2) Moveit
