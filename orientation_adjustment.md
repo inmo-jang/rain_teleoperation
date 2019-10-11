@@ -71,7 +71,7 @@ rosrun tf2_ros static_transform_publisher 1.45 -0.05 0.135 3.141592 0 0 world ca
 
 ```
 roslaunch dope dope.launch
-rosrun rain_ai_assist dope_to_obstacle.py
+rosrun rain_ai_assist dope_to_obstacle_object.py
 ```
 
 
@@ -86,10 +86,10 @@ rosrun rviz rviz -d ~/.rviz/demo_orientation_adjustment.rviz
 ### (6) Leap Motion with Dynamic Obstacle Avoidance
 
 - Genenate a fake leapmotion input, which will then be modulated by the dynamic obstacle avoidancce algorithm. 
-   - **TODO**: `demo_dynamic_obstacle.py` should be separated to a node generating a fake leap motion input and another node that addresses dynamic obstacle avoidance. 
+   - **TODO**: `demo_orientation_adjust.py` should be separated to a node generating a fake leap motion input and another node that addresses dynamic obstacle avoidance. 
    
 ```
-rosrun rain_ai_assist demo_dynamic_obstacle.py
+rosrun rain_ai_assist demo_orientation_adjust.py
 ```
 
 
