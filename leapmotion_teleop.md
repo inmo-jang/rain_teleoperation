@@ -76,6 +76,8 @@ rosrun rain_test gen_fake_leap.py
 ``` 
 rosrun robotiq_s_model_control SModelTcpNode.py 192.168.1.11
 rosrun robotiq_s_model_control SModelController_vr.py [gazebo or real]
-``
+```
 
-* Result is : https://www.youtube.com/watch?v=TQSg8v2cMcE
+* Result is : ["https://www.youtube.com/watch?v=TQSg8v2cMcE"](https://www.youtube.com/watch?v=TQSg8v2cMcE)
+
+
