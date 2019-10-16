@@ -39,9 +39,11 @@ strictness: 2"
 * You should set some parameters in "leapmotion_to_twist.py", for example, scaling factors.  
 ```
 roslaunch moveit_jog_arm jog_with_leapmotion.launch
-rosrun moveit_jog_arm leapmotion_to_twist.py (TODO: Will be included in jog_with_leapmotion.launch)
+rosrun moveit_jog_arm leapmotion_to_twist.py $(option = ROS)$ (TODO: Will be included in jog_with_leapmotion.launch)
 ```
+- In ROS option, the node will take a leap motion input in ROS coordinate. Otherwise, it assume that an input in Unity coordinate will be used. 
 
+- That is, for this demo, just use `rosrun moveit_jog_arm leapmotion_to_twist.py ROS`
 
 ### (5) Leap Motion
 
