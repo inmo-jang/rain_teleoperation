@@ -55,11 +55,11 @@ rosrun rain_test gen_fake_leap.py
 
 ------------------------
 
-## Execution with Unity
+## Execution with Unity (Demo: Bare-Hand Teleoperation)
 
 ### (6) Bridge ROS and Unity
 
-* You make sure that you run `rosrun moveit_jog_arm leapmotion_to_twist.py` with out `ROS` option. 
+* You make sure that you run `rosrun moveit_jog_arm leapmotion_to_twist.py demo1`. Here, depending on your robot's position, you may need to do with `ROS` option or customise additional option. 
 
 * Launch the following launch file (rosbridge):
 
@@ -67,6 +67,15 @@ rosrun rain_test gen_fake_leap.py
  roslaunch rain_unity ur5_robotiq_unity_real.launch
 ```
 
-* Then, in the Unity side, run the scene (Scene_190220.unity) with rosbridge.
+* Then, in the Unity side, run the scene (Scene_191016.unity) with rosbridge.
+
+### (7) Run Robotiq Gripper
+
+* Run the gripper controller node (Only being activated in "MODE_1" of `\rain\status\teleoperation_mode`)
+
+``` 
+rosrun robotiq_s_model_control SModelTcpNode.py 192.168.1.11
+rosrun robotiq_s_model_control SModelController_vr.py [gazebo or real]
+``
 
 * Result is : https://www.youtube.com/watch?v=TQSg8v2cMcE
