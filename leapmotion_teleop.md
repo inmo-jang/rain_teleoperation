@@ -57,7 +57,21 @@ rosrun rain_test gen_fake_leap.py
 
 ## Execution with Unity (Demo: Bare-Hand Teleoperation)
 
-### (6) Bridge ROS and Unity
+### (6) Run usb_cam
+
+* You may want to use usb cams to provide the situation of the remote site. 
+``` 
+sudo apt-get install ros-kinetic-usb-cam
+```
+
+* Then, launch the following file:
+
+```
+roslaunch rain_test usb_cam_demo.launch
+```
+
+
+### (7) Bridge ROS and Unity
 
 * You make sure that you run `rosrun moveit_jog_arm leapmotion_to_twist.py demo1`. Here, depending on your robot's position, you may need to do with `ROS` option or customise additional option. 
 
@@ -69,7 +83,7 @@ rosrun rain_test gen_fake_leap.py
 
 * Then, in the Unity side, run the scene (Scene_191016.unity) with rosbridge.
 
-### (7) Run Robotiq Gripper
+### (8) Run Robotiq Gripper
 
 * Run the gripper controller node (Only being activated in "MODE_1" of `\rain\status\teleoperation_mode`)
 
