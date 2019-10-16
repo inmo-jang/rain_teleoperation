@@ -59,7 +59,9 @@ rosrun rain_test gen_fake_leap.py
 
 ### (6) Bridge ROS and Unity
 
-* launch the following launch file (rosbridge):
+* You make sure that you run `rosrun moveit_jog_arm leapmotion_to_twist.py` with out `ROS` option. 
+
+* Launch the following launch file (rosbridge):
 
 ```
  roslaunch rain_unity ur5_robotiq_unity_real.launch
