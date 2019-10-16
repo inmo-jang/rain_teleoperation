@@ -53,4 +53,18 @@ rosrun moveit_jog_arm leapmotion_to_twist.py $(option = ROS)$ (TODO: Will be inc
 rosrun rain_test gen_fake_leap.py
 ```
 
+------------------------
 
+## Execution with Unity
+
+### (6) Bridge ROS and Unity
+
+* launch the following launch file (rosbridge):
+
+```
+ roslaunch rain_unity ur5_robotiq_unity_real.launch
+```
+
+* Then, in the Unity side, run the scene (Scene_190220.unity) with rosbridge.
+
+* Result is : https://www.youtube.com/watch?v=TQSg8v2cMcE
