@@ -10,7 +10,7 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 
 - Video: https://www.youtube.com/watch?v=UY77MVYvSPc
 
-- Consider citing the following:
+- This source code was refactored for better expandability, based on the previous work that was published as follows. Please consider citing it. 
 
 ```
 @inproceedings{jang2019barehand,
