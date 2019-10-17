@@ -132,5 +132,7 @@ roslaunch moveit_jog_arm jog_with_xbox.launch
 
 - Note: You need to install `joy` package: http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick. 
 
+- Note: Even while you are pushing a button for a while, the robot may stop moving within a couple of seconds. This is because of ``incoming_command_timeout`` in yaml setting and the fact that `joy` only gives a topic even when you are pushing a button longer. 
+
 
 
