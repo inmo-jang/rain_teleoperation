@@ -2,7 +2,7 @@ https://inmo-jang.github.io/rain_teleoperation/.
 
 # rain_teleoperation
 
-This repo describes how to setup a Universal Robot for teleoperatoin. The environment I am using is Ubuntu 16.04 and ROS Kinetic version.  
+This repo describes how to setup a Universal Robot for teleoperatoin. The environment I am using is Ubuntu 16.04 and ROS Kinetic version. This work is a part of RAIN Hub project (https://rainhub.org.uk/).  
 
 ## (1) Xbox Teleoperation [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/xbox_teleop.md)
 
