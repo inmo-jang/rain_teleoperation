@@ -57,5 +57,5 @@ rosrun relaxed_ik marker_ikgoal_driver.py
 ### Results
 * Real UR5: [https://www.youtube.com/watch?v=e6j5HR66wDg](https://www.youtube.com/watch?v=e6j5HR66wDg)
 * Gazebo UR5: [https://youtu.be/1DjfZrxbu0s](https://youtu.be/1DjfZrxbu0s)
-
+* Precise mode vs Smooth mode: [https://www.youtube.com/watch?v=Kw83MVIgj4Q](https://www.youtube.com/watch?v=Kw83MVIgj4Q)
 
