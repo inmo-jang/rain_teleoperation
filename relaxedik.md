@@ -55,6 +55,16 @@ rosrun relaxed_ik marker_ikgoal_driver.py
 
 * (Update: 25 Nov 2019) Now, we can use another user interface when using `marker_ikgoal_driver.py`. In the code, you need to define `user_interface`, and make sure the appropriate input device node is running. 
 
+    * Joystick 
+        1. Make sure the joystick connected: `rosparam set joy_node/dev "/dev/input/js1"`
+        2. Run joy_node: `rosrun joy joy_node`
+        
+        
+    * HTC Vive
+        1. Launch the SteamVR's vrserver: `roslaunch vive_ros server_vr.launch` 
+        2. Launch the node: `roslaunch vive_ros vive.launch`
+        3. To close the node you can Ctrl+C. To close the vr server you have to kill the process. For convenience: `rosrun vive_ros close_servervr.sh`
+        
 
 ### Results
 * Real UR5: [https://www.youtube.com/watch?v=e6j5HR66wDg](https://www.youtube.com/watch?v=e6j5HR66wDg)
