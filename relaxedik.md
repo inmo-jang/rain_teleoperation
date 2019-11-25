@@ -53,6 +53,8 @@ roslaunch relaxed_ik rviz_viewer_no_pub_norsp.launch
 rosrun relaxed_ik marker_ikgoal_driver.py
 ```
 
+* (Update: 25 Nov 2019) Now, we can use another user interface when using `marker_ikgoal_driver.py`. In the code, you need to define `user_interface`, and make sure the appropriate input device node is running. 
+
 
 ### Results
 * Real UR5: [https://www.youtube.com/watch?v=e6j5HR66wDg](https://www.youtube.com/watch?v=e6j5HR66wDg)
