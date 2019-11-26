@@ -69,6 +69,11 @@ rosrun relaxed_ik marker_ikgoal_driver.py
         3. To close the node you can Ctrl+C. To close the vr server you have to kill the process. For convenience: `rosrun vive_ros close_servervr.sh`
         
 
+    * Execution with Unity (using `Twist` msg)
+        1. Launch rosbridge: `roslaunch rain_unity ur5_robotiq_unity_real.launch`
+        2. Run a Unity application. 
+        
+
 ### Results
 * Real UR5: [https://www.youtube.com/watch?v=e6j5HR66wDg](https://www.youtube.com/watch?v=e6j5HR66wDg)
 * Gazebo UR5: [https://youtu.be/1DjfZrxbu0s](https://youtu.be/1DjfZrxbu0s)
