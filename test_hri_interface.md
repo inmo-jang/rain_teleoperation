@@ -24,7 +24,7 @@ This instruction is to set up the HRI test.
       roslaunch relaxed_ik rviz_viewer_for_hri_test.launch
       rosrun relaxed_ik marker_ikgoal_driver_for_hri_test.py
       ```
-     
+     - Using the marker in Rviz, move the arm slightly, which activates the rest of the process (Needs confirmation).
 
   * (TODO) Gripper: ``
   
