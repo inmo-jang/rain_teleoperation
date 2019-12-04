@@ -30,3 +30,6 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 ## (4) TODO: Demo - Dynamic Orientation Adjustment [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/orientation_adjustment.md)
 
 ## (5) Teleoperation using RelaxedIK [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/relaxedik.md)
+
+
+## * HRI Test 1: User Interfaces [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/test_hri_interface.md)
