@@ -66,7 +66,7 @@ rosrun relaxed_ik marker_ikgoal_driver.py
     * HTC Vive
         1. Launch the SteamVR's vrserver: `roslaunch vive_ros server_vr.launch` 
         2. Launch the node: `roslaunch vive_ros vive.launch`
-        3. To close the node you can Ctrl+C. To close the vr server you have to kill the process. For convenience: `rosrun vive_ros close_servervr.sh`
+        * Note: To close the node you can Ctrl+C. To close the vr server you have to kill the process. For convenience: `rosrun vive_ros close_servervr.sh`
         
 
     * Execution with Unity (using `Twist` msg)
