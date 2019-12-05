@@ -33,3 +33,5 @@ This repo describes how to setup a Universal Robot for teleoperatoin. The enviro
 
 
 ## * HRI Test 1: User Interfaces [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/test_hri_interface.md)
+
+## * Miscellaneous tests [link](https://github.com/inmo-jang/rain_teleoperation/blob/master/miscellaneous_test.md)
