@@ -4,7 +4,10 @@ This instruction is to set up the HRI test.
 
 (1) Bring the robot: 
   * UR5
-    - Connect to a UR5: `roslaunch ur_modern_driver ur5_ros_control.launch robot_ip:=172.22.22.2`
+    - Connect to a UR5: 
+       - Real Robot: `roslaunch ur_modern_driver ur5_ros_control.launch robot_ip:=172.22.22.2`
+       - Gazebo: `roslaunch rain_gazebo ur5_robotiq.launch` (You should click the play button afterwards)
+       
     - Switch ros_control:
       ```
       rosservice call /controller_manager/switch_controller "start_controllers:
@@ -32,6 +35,9 @@ This instruction is to set up the HRI test.
   * Run a RGB-D Camera: `roslaunch astra_camera astra.launch`
   * (TODO) Set the camera coordinate system: `rosrun tf2_ros static_transform_publisher 1.53 0.08 0.285 3.141592 0 0 world camera_astra_link`
   * Downsampling the pointcloud: `roslaunch pcl_ros voxel_grid_filter.launch gui:=false`
+  
+  * Run webcams: `roslaunch rain_test usb_cam_demo.launch`
+     - options:`cam1:=true cam2:=true`. By default, `cam0` will launch. 
   
 (3) Open a socket to Unity: `roslaunch rain_unity ur5_robotiq_unity_real.launch`
 
