@@ -29,7 +29,13 @@ This instruction is to set up the HRI test.
       ```
      - Using the marker in Rviz, move the arm slightly, which activates the rest of the process (Needs confirmation).
 
-  * (TODO) Gripper: ``
+  * Gripper (Robotiq 3-finger Gripper)
+    - Connect to the gripper:
+       - `rosrun robotiq_s_model_control SModelTcpNode.py 192.168.1.11`
+    - Run the controller (TODO):
+       - `rosrun robotiq_s_model_control SModel...py`
+    - Run the joint_state_publisher: This will publish `/gripper_joint_states`
+       - `rosrun robotiq_joint_state_publisher s_model_joint_states _prefix:=r_`
   
 (2) Camera
   * Run a RGB-D Camera: `roslaunch astra_camera astra.launch`
