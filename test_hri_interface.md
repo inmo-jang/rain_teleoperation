@@ -6,7 +6,7 @@ This instruction is to set up the HRI test.
   * UR5
     - Connect to a UR5: 
        - Real Robot: `roslaunch ur_modern_driver ur5_ros_control.launch robot_ip:=172.22.22.2`
-       - Gazebo: `roslaunch rain_gazebo ur5_robotiq.launch` (You should click the play button afterwards)
+       - Gazebo: `roslaunch rain_gazebo ur5_robotiq.launch gripper:=robotiq_3f` (You should click the play button afterwards)
        
     - Switch ros_control:
       ```
@@ -30,12 +30,14 @@ This instruction is to set up the HRI test.
      - Using the marker in Rviz, move the arm slightly, which activates the rest of the process (Needs confirmation).
 
   * Gripper (Robotiq 3-finger Gripper)
-    - Connect to the gripper:
+    - Connect to the gripper (Skip for Gazebo test):
        - `rosrun robotiq_s_model_control SModelTcpNode.py 192.168.1.11`
-    - Run the controller (TODO):
-       - `rosrun robotiq_s_model_control SModel...py`
+    - Run the controller:
+       - `rosrun robotiq_s_model_control SModelController_unity.py [gazebo or real]` - Command from Unity ("Float32")
+       - (For keyboard testing): `rosrun robotiq_s_model_control SModelController.py [gazebo or real]`
     - Run the joint_state_publisher: This will publish `/gripper_joint_states`
        - `rosrun robotiq_joint_state_publisher s_model_joint_states _prefix:=r_`
+       - (For Gazebo) `rosrun robotiq_joint_state_publisher s_model_joint_states _prefix:=r_ _model:=gazebo`
   
 (2) Camera
   * Run a RGB-D Camera: `roslaunch astra_camera astra.launch`
