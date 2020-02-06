@@ -65,6 +65,11 @@ git clone https://github.com/inmo-jang/robotiq.git
 
 - This package is needed to interface with a RobotiQ gripper. 
 
+### If you encounter any problem in installation:
+- In most cases, that is because you miss some dependencies. 
+- Try `rosdep install --from-paths src --ignore-src -r -y`
+
+
 ------------------------
 
 ## Execution
