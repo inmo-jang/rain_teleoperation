@@ -43,9 +43,8 @@ roslaunch relaxed_ik load_info_file.launch
 ```            
 
 * Run Relaxed IK solver
-```   
-roslaunch relaxed_ik relaxed_ik_python.launch
-```
+    * Rust-version (recommended) : `roslaunch relaxed_ik relaxed_ik_rust.launch`
+    * Python-version: `roslaunch relaxed_ik relaxed_ik_python.launch`
 
 * Rviz (Rviz takes `\joint_states` from the robot and provides new joint position command via `/joint_group_position_controller/command`)
 ```
