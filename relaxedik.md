@@ -17,6 +17,7 @@ The method is basically similar to ["How to control the robot by a Xbox Joystick
     ```
     
 - You also need to set some parameters in `start_here.py` in `relaxed_ik` package. 
+- NOTE: You should rename `relaxed_ik-origin` to `relaxed_ik`. 
 
 -------------------------
 ## Execution (after all settings in `start_here.py`)
