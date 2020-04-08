@@ -13,7 +13,7 @@ The method is basically similar to ["How to control the robot by a Xbox Joystick
 
 - One top of that, you also need to install the followings:
     ```
-    git clone https://github.com/inmo-jang/relaxed_ik.git -b -dev
+    git clone https://github.com/inmo-jang/relaxed_ik-origin.git -b -dev
     ```
     
 - You also need to set some parameters in `start_here.py` in `relaxed_ik` package. 
