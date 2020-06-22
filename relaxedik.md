@@ -16,8 +16,15 @@ The method is basically similar to ["How to control the robot by a Xbox Joystick
     git clone https://github.com/inmo-jang/relaxed_ik-origin.git -b -dev
     ```
     
+    If the above cloning doesn't work, then use this alternatively:
+    ```
+    git clone https://github.com/inmo-jang/relaxed_ik-origin.git
+    git checkout dev
+    ```
+    
+    
 - You also need to set some parameters in `start_here.py` in `relaxed_ik` package. 
-- NOTE: You should rename `relaxed_ik-origin` to `relaxed_ik`. 
+- NOTE: You should rename the source folder `relaxed_ik-origin` to `relaxed_ik`. 
 
 -------------------------
 ## Execution (after all settings in `start_here.py`)
