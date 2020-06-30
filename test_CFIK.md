@@ -74,6 +74,15 @@ python postprocess_PubRate.py
 
 
 # Usability Test
+
+Follow the instruction for (2) until `rosrun relaxed_ik marker_ikgoal_driver.py`.
+
+**Set your parameters for usability study** in `usability_tester.py`
+  - `num_test`: the number of tests 
+  
+Then, run the followings:
+
 ```
-roslaunch rain_gazebo ur5_robotiq.launch gripper:=robotiq_3f
+rosrun rviz_marker_publisher usability_tester.py
 ```
+
