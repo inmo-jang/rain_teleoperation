@@ -86,3 +86,49 @@ Then, run the followings:
 rosrun rviz_marker_publisher usability_tester.py
 ```
 
+
+
+
+
+
+# A Simple Gazebo Demo
+
+- UR5
+  - Launch a Gazebo robot
+    ```
+    roslaunch rain_gazebo ur5_robotiq.launch gripper:=robotiq_3f
+    ```
+
+  - Switch ros_control
+    ```
+    rosservice call /controller_manager/switch_controller "start_controllers:
+    - 'joint_group_position_controller'
+    stop_controllers:
+    - 'pos_based_pos_traj_controller'
+    strictness: 2"
+
+    ```
+  - Load the robot and launch a Rviz Window:
+  ```
+  roslaunch relaxed_ik load_info_file.launch
+  roslaunch relaxed_ik rviz_viewer_no_pub_norsp.launch
+  ```
+
+  - Run a IK solver, and the marker interface:
+  ```
+  roslaunch relaxed_ik relaxed_ik_rust.launch
+  rosrun relaxed_ik marker_ikgoal_driver.py
+  ```
+  
+- Gripper
+  - Run the controller (Keyboard interface):
+  ```
+  rosrun robotiq_s_model_control SModelController.py gazebo
+  ```
+
+- Encapsulation (TODO)
+  - This node subscribes the environmental information from Gazebo (via `/gazebo/model_states`), and then generate virtual capsules for them and publish the casules' information via `/visualization_marker_array`, which will be subcribed by the IK solver. 
+  
+  ```
+  rosrun rviz_marker_publisher encapsulation.py
+  ```
