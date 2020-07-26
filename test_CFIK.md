@@ -17,10 +17,9 @@ rosrun relaxed_ik marker_ikgoal_driver.py
 **Set your parameters for (1) the IK; (2) Obstacle info; (3) Virtual teleoperator.**
   - For (2) & (3): See [https://github.com/inmo-jang/rviz_marker_publisher](https://github.com/inmo-jang/rviz_marker_publisher)
   
-Then, run the followings:
+Then, run the `virtual_teleoperator` with mode = 2 (You should edit the file for this):
 
 ```
-rosrun rviz_marker_publisher gen_obstacles.py
 rosrun rviz_marker_publisher virtual_teleoperator.py
 ```
 
