@@ -35,6 +35,7 @@ This instruction is to set up the HRI test.
     - Run the controller:
        - `rosrun robotiq_s_model_control SModelController_unity.py [gazebo or real]` - Command from Unity ("Float32")
        - (For keyboard testing): `rosrun robotiq_s_model_control SModelController.py [gazebo or real]`
+       - Here note that you shouldn't put `[.  ]`, but just put `gazebo` or `real`.
     - Run the joint_state_publisher: This will publish `/gripper_joint_states`
        - `rosrun robotiq_joint_state_publisher s_model_joint_states _prefix:=r_`
        - (For Gazebo) `rosrun robotiq_joint_state_publisher s_model_joint_states _prefix:=r_ _model:=gazebo`
